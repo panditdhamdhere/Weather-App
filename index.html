@@ -42,8 +42,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -51,7 +51,7 @@
 
     <!-- card starts here -->
     <div class="container">
-        <h1 class="my-4 text-center">Weather for Delhi</h1>
+        <h1 class="my-4 text-center">Weather for <span id="cityName"></span> </h1>
         <main>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
@@ -63,10 +63,10 @@
                             <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>10 users included</li>
-                                <li>2 GB of storage</li>
-                                <li>Email support</li>
-                                <li>Help center access</li>
+                                <li>Tempreture is <span id="temp"></span></li>
+                                <li>Min Tempreture is <span id="min_temp"></span></li>
+                                <li>Max Tempreture is <span id="max_temp"></span></li>
+
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                         </div>
@@ -81,10 +81,11 @@
                             <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
+                                <li>Feels Like <span id="feels_like"></span></li>
+                                <li>Humidity <span id="humidity"></span></li>
+                                <li>Wind Speed <span id="wind_speed"></span></li>
+                                <li>Wind Degrees <span id="wind_degrees"></span></li>
+
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
                         </div>
@@ -99,10 +100,9 @@
                             <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
+                                <li>Cloud PCT is <span id="cloud_pct"></span></li>
+                                <li> Sunrise <span id="sunrise"></span></li>
+                                <li> Sunset <span id="sunset"></span></li>
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
                         </div>
